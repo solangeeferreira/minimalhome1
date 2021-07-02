@@ -1,0 +1,420 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.portada {
+    background-color: rgb(191, 185, 174);
+    background-image: url(../img/fondo.jpg);
+    background-image: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+
+.portadatienda {
+    background-color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #735C6B;
+}
+
+a.menu2 {
+    color: #CFC8C0;
+    text-decoration: none;
+}
+
+a.menu2:hover {
+    color: #735C6B;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "shop title form"
+    "nav nav nav"
+    "suscribe suscribe suscribe";
+    grid-template-rows: 28px 55px 60px 500px;
+    grid-template-columns: 20% auto 20%;
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+    height: 100vh;
+}
+
+#grid2 {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "shop title form"
+    "nav nav nav"
+    "tienda tienda tienda"
+    ;
+    grid-template-rows: 28px 55px 40px 6000px;
+    grid-template-columns: 20% auto 20%;
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+}
+
+#grid3 {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "shop title form"
+    "nav nav nav"
+    ;
+    grid-template-rows: 28px 55px 40px;
+    grid-template-columns: 20% auto 20%;
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+}
+
+#grid4 {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "shop title form"
+    "nav nav nav"
+    "nombre apellido mail"
+    ;
+    grid-template-rows: 28px 55px 40px 1000px;
+    grid-template-columns: 20% auto 20%;
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+}
+
+header {
+    grid-area: header;
+}
+
+form.example {
+    grid-area: form;
+}
+
+section#title {
+    grid-area: title;
+}
+
+nav#menu {
+    grid-area: nav;
+}
+
+section#suscribe {
+    grid-area: suscribe;
+}
+
+div.producto1 {
+    grid-area: producto1;
+}
+
+div.producto2 {
+    grid-area: producto2;
+}
+
+main {
+    grid-area: tienda;
+}
+
+form section.name {
+    grid-area: nombre;
+}
+
+form section.surname {
+    grid-area: apellido;
+}
+
+form section.email {
+    grid-area: mail;
+}
+
+
+
+
+.discount {
+    color: white;
+    background-color: rgb(191, 185, 174, 0.5);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 6px;
+    margin: 0px;
+}
+
+.title { 
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;  
+    font-weight: 50px;
+    word-spacing: 13px;
+}
+
+.title2 {
+    color: #CFC8C0;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;  
+    font-weight: 50px;
+    word-spacing: 13px;   
+}
+
+.searchbutton {
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 60px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    text-emphasis-color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: inline;
+    font-weight: 45px;
+}
+
+.suscribetext {
+    color: white;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 300px;
+}
+
+.buttom { 
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contacttext {
+    color: rgb(191, 185, 174);
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+.contact__mails {
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+    
+.ul__menu {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form.example input[type=text] {
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 8px;
+    background: rgb(191, 185, 174);
+    color: white;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: rgba(94, 83, 77, 0.555);
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+ 
+  /*----------------TIENDA-------------------*/
+
+  .portadatienda main{
+    margin: 2rem;
+ }
+
+ .formatotienda{ 
+     background-color: white;
+     margin-top: 5px;    
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(3, 1fr);  
+     grid-row-gap: 40px;   
+     grid-column-gap: 30px;
+     grid-template-areas: 
+     "img1 img2 img3"
+     "img4 img5 img6";
+   }
+
+  article.img1 {
+      grid-area: img1;
+  }
+
+  article.img2 {
+      grid-area: img2;
+  }
+
+  article.img3 {
+      grid-area: img3;
+  }
+
+  article.img4 {
+    grid-area: img4;
+}
+
+    article.img5 {
+    grid-area: img5;
+}
+
+  article.img6 {
+      grid-area: img6;
+  }
+
+  .formatotienda article{    
+     color: black; 
+     font-size: 13px;   
+     display: grid;
+     grid-template-columns: auto; 
+     grid-template-rows: auto auto auto auto;
+     align-items: center;  
+     justify-items: center; 
+     grid-gap: 0.5rem;   
+ }
+
+ .formatotienda img{   
+     grid-row: 1;   
+ }
+
+ .formatotienda .descripcion {   
+     grid-row: 2;   
+ }
+ .formatotienda .precio {   
+     grid-row: 3;   
+ }
+
+ .formatotienda button{   
+     grid-row: 4;
+     padding: 0.3rem;
+ }
+
+ .descripcion {
+    color:black; 
+    font-family:'Montserrat', sans-serif; 
+ }
+
+ img {
+     max-width: 400px;
+ }
+
+ button.boton {
+     color: white;
+     background-color: rgb(191, 185, 174);
+     border-radius: 12px;
+     border: 1px solid rgb(191, 185, 174);
+     font-family:'Montserrat', sans-serif; 
+     font-size: 12px;
+ }
+
+ button.boton:hover {
+    color: white;
+    background-color: rgb(105, 101, 94);
+    border-radius: 12px;
+    border: 1px solid rgb(191, 185, 174);
+    font-family:'Montserrat', sans-serif; 
+    font-size: 12px;
+}
+
+.i1:hover {
+    transform: scale(0.9,0.9);
+}
+
+.i2:hover {
+    transform: scale(0.9,0.9);
+}
+
+.i3:hover {
+    transform: scale(0.9,0.9);
+}
+
+.i4:hover {
+    transform: scale(0.9,0.9);
+}
+
+.i5:hover {
+    transform: scale(0.9,0.9);
+}
+
+.i6:hover {
+    transform: scale(0.9,0.9);
+}
+
+
+  /*----------------CONTACTO------------------*/
+
+section.name {
+    text-align: center;
+    color: black;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 12px;
+    padding: 10px;
+    border: none;
+}
+
+section.surname {
+    text-align: center;
+    color: black;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 12px;
+    padding: 10px;
+}
+
+section.email {
+    text-align: center;
+    color: black;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 12px;
+}
+
+section.phone {
+    text-align: center;
+    color: black;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 12px;
+} 
